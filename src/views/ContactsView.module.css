@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: start;
+  margin-top: 50px;
+}
+
+.formSection {
+  margin-left: 150px;
+}
+
+.listSection {
+  margin-left: 100px;
+}
