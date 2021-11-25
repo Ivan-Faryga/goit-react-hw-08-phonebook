@@ -18,9 +18,13 @@
   align-content: center;
 }
 
+.title {
+  color: #08534e;
+}
+
 .label {
   align-items: center;
-  width: 400px;
+  width: 435px;
   padding-left: 15px;
   padding-right: 15px;
   display: block;
@@ -32,6 +36,8 @@
 }
 
 .labelText {
+  display: inline-block;
+  width: 100px;
   padding-right: auto;
   margin-right: 15px;
 }

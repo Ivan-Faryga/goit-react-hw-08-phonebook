@@ -12,3 +12,14 @@
       rgba(108, 188, 99, 0.34) 75 %
     );
 }
+
+.title {
+  text-align: center;
+  color: #08534e;
+}
+
+.img {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 15px;
+}

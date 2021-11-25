@@ -36,7 +36,7 @@ const LoginView = () => {
         autoComplete="off"
       >
         <label className={s.label}>
-          your email
+          <p className={s.labelText}>your email</p>
           <input
             type="email"
             name="email"
@@ -47,7 +47,7 @@ const LoginView = () => {
         </label>
 
         <label className={s.label}>
-          password
+          <p className={s.labelText}>password</p>
           <input
             type="password"
             name="password"

@@ -1,5 +1,6 @@
 .title {
   text-align: center;
+  color: #08534e;
 }
 
 .formWrapper {
@@ -15,7 +16,7 @@
 
 .label {
   align-items: center;
-  width: 400px;
+  width: 500px;
   padding-left: 15px;
   padding-right: 15px;
   display: block;
@@ -27,8 +28,11 @@
 }
 
 .labelText {
+  display: inline-block;
+  width: 100px;
   padding-right: auto;
   margin-right: 15px;
+  margin-left: 35px;
 }
 
 .formLabel {

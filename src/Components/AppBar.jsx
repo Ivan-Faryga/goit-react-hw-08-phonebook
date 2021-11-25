@@ -10,7 +10,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    borderBottom: "1px solid #2A363B",
+    borderBottom: "1px solid rgb(17, 159, 224)",
   },
 };
 
@@ -21,9 +21,7 @@ export default function AppBar() {
     <div>
       <header style={styles.header}>
         <Navigation />
-        {/* {isLoggedIn ? <UserMenu /> : <AuthNav />} */}
-        <UserMenu />
-        <AuthNav />
+        {isLoggedIn ? <UserMenu /> : <AuthNav />}
       </header>
     </div>
   );

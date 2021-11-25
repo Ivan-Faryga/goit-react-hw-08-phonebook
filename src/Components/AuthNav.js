@@ -4,11 +4,15 @@ const styles = {
   link: {
     display: "inline-block",
     textDecoration: "none",
-    padding: 12,
+    padding: 25,
     fontWeight: 700,
-    color: "#2A363B",
+    color: "rgb(17, 159, 224)",
   },
   active: {
+    display: "inline-block",
+    textDecoration: "none",
+    padding: 25,
+    fontWeight: 700,
     color: "#E84A5F",
   },
 };
@@ -19,17 +23,14 @@ export default function AuthNav() {
       <NavLink
         to="/register"
         end
-        // style={styles.link}
         style={(data) => (data.isActive ? styles.active : styles.link)}
-        /*activeStyle={styles.activeLink}*/
       >
         Sign Up
       </NavLink>
       <NavLink
         to="/login"
         end
-        style={styles.link}
-        /*activeStyle={styles.activeLink}*/
+        style={(data) => (data.isActive ? styles.active : styles.link)}
       >
         Sign In
       </NavLink>

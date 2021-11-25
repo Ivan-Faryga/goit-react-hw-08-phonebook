@@ -22,19 +22,36 @@ export default function App() {
       <AppBar />
 
       <Routes>
-        <Route path="/" element={<PublicRoute element={<HomeView />} />} />
+        <Route
+          path="/"
+          element={
+            <PublicRoute>
+              <HomeView />
+            </PublicRoute>
+          }
+        />
         <Route
           path="/login"
-          element={<PublicRoute restricted element={<LoginView />} />}
+          element={
+            <PublicRoute restricted redirectTo="/contacts">
+              <LoginView />
+            </PublicRoute>
+          }
         />
         <Route
           path="/register"
-          element={<PublicRoute restricted element={<RegisterView />} />}
+          element={
+            <PublicRoute restricted redirectTo="/">
+              <RegisterView />
+            </PublicRoute>
+          }
         />
         <Route
           path="/contacts"
           element={
-            <PrivateRoute redirectTo="/login" element={<ContactsView />} />
+            <PrivateRoute redirectTo="/login">
+              <ContactsView />
+            </PrivateRoute>
           }
         />
       </Routes>

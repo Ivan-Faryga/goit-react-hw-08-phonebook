@@ -44,7 +44,7 @@ function RegisterView() {
 
   return (
     <div className={s.registerWrapper}>
-      <h1>Sign up, and check the benefits of our App :)</h1>
+      <h1 className={s.title}>Sign up, and check the benefits of our App :)</h1>
 
       <form
         autoComplete="off"
@@ -52,7 +52,7 @@ function RegisterView() {
         className={s.formWrapper}
       >
         <label htmlFor={uniqueIdName} className={s.label}>
-          <span className={s.labelText}>Name</span>
+          <p className={s.labelText}>Name</p>
           <input
             id={uniqueIdName}
             type="text"
